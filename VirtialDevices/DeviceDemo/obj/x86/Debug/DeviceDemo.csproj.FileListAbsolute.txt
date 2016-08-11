@@ -1,0 +1,13 @@
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\bin\Debug\DeviceDemo.exe
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\bin\Debug\DeviceDemo.pdb
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\bin\Debug\DeviceUtils.dll
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\bin\Debug\Instrument.dll
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\bin\Debug\TwinCAT.Ads.dll
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\bin\Debug\DeviceUtils.pdb
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\bin\Debug\Instrument.pdb
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.csprojResolveAssemblyReference.cache
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.DeviceDemo.resources
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.Properties.Resources.resources
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.csproj.GenerateResource.Cache
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.exe
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.pdb

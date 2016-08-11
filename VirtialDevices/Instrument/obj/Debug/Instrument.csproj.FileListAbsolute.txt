@@ -1,0 +1,8 @@
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\Instrument\bin\Debug\Instrument.dll
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\Instrument\bin\Debug\Instrument.pdb
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\Instrument\bin\Debug\DeviceUtils.dll
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\Instrument\bin\Debug\TwinCAT.Ads.dll
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\Instrument\bin\Debug\DeviceUtils.pdb
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\Instrument\obj\Debug\Instrument.csprojResolveAssemblyReference.cache
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\Instrument\obj\Debug\Instrument.dll
+D:\高通量仪器\GTL_stable\GTL\VirtialDevices\Instrument\obj\Debug\Instrument.pdb

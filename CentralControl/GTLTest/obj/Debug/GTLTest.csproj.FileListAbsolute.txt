@@ -1,0 +1,14 @@
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\bin\Debug\GTLTest.exe
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\bin\Debug\GTLTest.pdb
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\bin\Debug\GTLutils.dll
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\bin\Debug\Instrument.dll
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\bin\Debug\TwinCAT.Ads.dll
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\bin\Debug\GTLutils.pdb
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\bin\Debug\Instrument.pdb
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\obj\Debug\GTLTest.csprojResolveAssemblyReference.cache
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\obj\Debug\CentralControl.DemoDeviceForm.resources
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\obj\Debug\CentralControl.ControlForm.resources
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\obj\Debug\GTLTest.Properties.Resources.resources
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\obj\Debug\GTLTest.csproj.GenerateResource.Cache
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\obj\Debug\GTLTest.exe
+D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLTest\obj\Debug\GTLTest.pdb

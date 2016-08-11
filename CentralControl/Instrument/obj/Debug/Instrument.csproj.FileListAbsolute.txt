@@ -1,0 +1,8 @@
+D:\高通量仪器\GTL_stable\GTL\CentralControl\Instrument\bin\Debug\Instrument.dll
+D:\高通量仪器\GTL_stable\GTL\CentralControl\Instrument\bin\Debug\Instrument.pdb
+D:\高通量仪器\GTL_stable\GTL\CentralControl\Instrument\bin\Debug\GTLutils.dll
+D:\高通量仪器\GTL_stable\GTL\CentralControl\Instrument\bin\Debug\TwinCAT.Ads.dll
+D:\高通量仪器\GTL_stable\GTL\CentralControl\Instrument\bin\Debug\GTLutils.pdb
+D:\高通量仪器\GTL_stable\GTL\CentralControl\Instrument\obj\Debug\Instrument.csprojResolveAssemblyReference.cache
+D:\高通量仪器\GTL_stable\GTL\CentralControl\Instrument\obj\Debug\Instrument.dll
+D:\高通量仪器\GTL_stable\GTL\CentralControl\Instrument\obj\Debug\Instrument.pdb
