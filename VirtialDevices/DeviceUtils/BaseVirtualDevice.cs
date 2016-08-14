@@ -19,7 +19,7 @@ namespace DeviceUtils
         {
             isTerminating = false;
             mySocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            IPAddress myIP = IPAddress.Parse(hostIP);
+            IPAddress myIP = IPAddress.Parse(this.ControlIP);
             IPEndPoint point = new IPEndPoint(myIP, int.Parse(hostPort));
 
             try
@@ -73,6 +73,7 @@ namespace DeviceUtils
                 else
                     creator.addkeypair("subtype", "shenkongban");
             }*/
+            creator.addKeyPair("ControlIP", this.ControlIP);
             creator.addKeyPair("IP", this.IP);
             creator.addKeyPair("Name", this.Name);
             creator.addKeyPair("IdentifyID", this.IdentifyID);
