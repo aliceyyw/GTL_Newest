@@ -20,8 +20,8 @@ namespace GTLutils
         public Database()
         {
             conn = new SqlConnection();
-            //conn.ConnectionString = "Data Source=LAB229\\SQLEXPRESS; Initial Catalog=mygtl;Integrated Security=True";
-            conn.ConnectionString = ConfigurationSettings.AppSettings["connectionstring"];
+            conn.ConnectionString = "Data Source=LAB229\\SQLEXPRESS; Initial Catalog=mygtl;Integrated Security=True";
+            //conn.ConnectionString = ConfigurationSettings.AppSettings["connectionstring"];
         }
 
         public int insert(string query)
