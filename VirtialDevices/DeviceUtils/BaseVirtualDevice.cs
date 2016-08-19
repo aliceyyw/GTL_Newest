@@ -14,6 +14,23 @@ namespace DeviceUtils
         private Socket mySocket;
         private Thread myThread;
 
+        public delegate void cmdDelegate();
+        public event cmdDelegate cmdEvent;
+        private string cmd;
+        public string Glb_Cmd
+        {
+            get
+            {
+                return cmd;
+            }
+            set
+            {
+                cmd = value;
+                cmdEvent();
+
+            }
+        }
+
         private bool isTerminating;
         public override void init() 
         {
@@ -126,8 +143,31 @@ namespace DeviceUtils
                 DataOperate.WriteAny((String)de.Key, Code, de.Value);
             }
         }
+        //global cmd with event
+        public virtual void decodeCmdMessage(ModbusMessage msg) 
+        {
+            String cmd = (String)msg.Data["Cmd"];
+            if ("Start".Equals(cmd))
+            {
+                this.Glb_Cmd = "Start";
+            }
+            if ("Reset".Equals(cmd))
+            {
+                this.Glb_Cmd = "Reset";
+            }
+            if ("Stop".Equals(cmd))
+            {
+                this.Glb_Cmd = "Stop";
+            }
+            if ("Auto".Equals(cmd))
+            {
+                this.Glb_Cmd = "Auto";
+            }
 
-        public virtual void decodeCmdMessage(ModbusMessage s) { }
+        }
+        
+        
+        
         public override void ReceiveMsg(String s)
         {
             ModbusMessage message = ModbusMessageHelper.decodeModbusMessage(s);

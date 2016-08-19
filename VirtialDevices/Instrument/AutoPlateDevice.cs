@@ -221,31 +221,31 @@ namespace Instrument
             }
         }
 
-        public override void decodeCmdMessage(ModbusMessage msg)
-        {
-            String cmd = (String)msg.Data["Cmd"];
-            if ("Start".Equals(cmd))
-            {
-                //dispenTimer.Start();
-                this.MPF_Cmd = "Start";
-            }
-            if ("Reset".Equals(cmd))
-            {
-                MPF_Whichplate = 1;
-                this.MPF_Cmd = "Reset";
-            }
-            if ("Stop".Equals(cmd))
-            {
-                //dispenTimer.Stop();
-                this.MPF_Cmd = "Stop";
-            }
-            if ("Auto".Equals(cmd))
-            {
-                this.MPF_Cmd = "Auto";
-            }
+        //public override void decodeCmdMessage(ModbusMessage msg)
+        //{
+        //    String cmd = (String)msg.Data["Cmd"];
+        //    if ("Start".Equals(cmd))
+        //    {
+        //        //dispenTimer.Start();
+        //        this.MPF_Cmd = "Start";
+        //    }
+        //    if ("Reset".Equals(cmd))
+        //    {
+        //        MPF_Whichplate = 1;
+        //        this.MPF_Cmd = "Reset";
+        //    }
+        //    if ("Stop".Equals(cmd))
+        //    {
+        //        //dispenTimer.Stop();
+        //        this.MPF_Cmd = "Stop";
+        //    }
+        //    if ("Auto".Equals(cmd))
+        //    {
+        //        this.MPF_Cmd = "Auto";
+        //    }
 
-            this.sendOKResponse();
-        }
+        //    this.sendOKResponse();
+        //}
 
         public override void decodeSetMessage(ModbusMessage msg)
         {

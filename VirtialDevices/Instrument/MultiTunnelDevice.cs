@@ -257,19 +257,19 @@ namespace Instrument
             }
         }
 
-        private void decodeCmdMessage(ModbusMessage msg)
-        {
-            String cmd = (String)msg.Data["Cmd"];
-            if ("Start".Equals(cmd))
-            {
-                startTimer();
-            }
-            if ("Next".Equals(cmd))
-            {
-                MMA_PlateDetect = true;
-                startTimer();
-            }
-        }
+        //private void decodeCmdMessage(ModbusMessage msg)
+        //{
+        //    String cmd = (String)msg.Data["Cmd"];
+        //    if ("Start".Equals(cmd))
+        //    {
+        //        startTimer();
+        //    }
+        //    if ("Next".Equals(cmd))
+        //    {
+        //        MMA_PlateDetect = true;
+        //        startTimer();
+        //    }
+        //}
 
         private void decodeSetMessage(ModbusMessage msg)
         {

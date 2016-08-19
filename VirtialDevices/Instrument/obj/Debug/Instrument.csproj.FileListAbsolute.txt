@@ -6,3 +6,11 @@ D:\高通量仪器\GTL_stable\GTL\VirtialDevices\Instrument\bin\Debug\DeviceUtil
 D:\高通量仪器\GTL_stable\GTL\VirtialDevices\Instrument\obj\Debug\Instrument.csprojResolveAssemblyReference.cache
 D:\高通量仪器\GTL_stable\GTL\VirtialDevices\Instrument\obj\Debug\Instrument.dll
 D:\高通量仪器\GTL_stable\GTL\VirtialDevices\Instrument\obj\Debug\Instrument.pdb
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\Instrument\bin\Debug\Instrument.dll
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\Instrument\bin\Debug\Instrument.pdb
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\Instrument\bin\Debug\DeviceUtils.dll
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\Instrument\bin\Debug\TwinCAT.Ads.dll
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\Instrument\bin\Debug\DeviceUtils.pdb
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\Instrument\obj\Debug\Instrument.csprojResolveAssemblyReference.cache
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\Instrument\obj\Debug\Instrument.dll
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\Instrument\obj\Debug\Instrument.pdb

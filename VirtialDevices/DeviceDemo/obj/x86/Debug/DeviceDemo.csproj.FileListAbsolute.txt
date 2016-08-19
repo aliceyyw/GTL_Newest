@@ -11,3 +11,16 @@ D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\obj\x86\Debug\Device
 D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.csproj.GenerateResource.Cache
 D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.exe
 D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.pdb
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\bin\Debug\DeviceDemo.exe
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\bin\Debug\DeviceDemo.pdb
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\bin\Debug\DeviceUtils.dll
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\bin\Debug\Instrument.dll
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\bin\Debug\TwinCAT.Ads.dll
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\bin\Debug\DeviceUtils.pdb
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\bin\Debug\Instrument.pdb
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.csprojResolveAssemblyReference.cache
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.DeviceDemo.resources
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.Properties.Resources.resources
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.csproj.GenerateResource.Cache
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.exe
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceDemo\obj\x86\Debug\DeviceDemo.pdb

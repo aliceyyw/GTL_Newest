@@ -189,6 +189,7 @@ namespace VirtialDevices
                         aForm.IsSocket = false;
                     }*/
                     aForm.DispenDevice = (AutoDispenDevice)DeviceInfo;
+                    aForm.DispenDevice.cmdEvent += new BaseVirtualDevice.cmdDelegate(aForm.DispenDevice_cmdEvent);
                     aForm.Show();
                     break;
                 case DeviceType.Plate:

@@ -42,26 +42,26 @@ namespace Instrument
             this.SendModBusMsg(ModbusMessage.MessageType.REPORT, htable);
         }
 
-        public override void decodeCmdMessage(ModbusMessage msg)
-        {
-            String cmd = (String)msg.Data["Cmd"];
-            if ("Start".Equals(cmd))
-            {
-                this.MPF_Cmd = "Start";
-            }
-            if ("Reset".Equals(cmd))
-            {
-                this.MPF_Cmd = "Reset";
-            }
-            if ("Stop".Equals(cmd))
-            {
-                this.MPF_Cmd = "Stop";
-            }
-            if ("Auto".Equals(cmd))
-            {
-                this.MPF_Cmd = "Auto";
-            }
-        }
+        //public override void decodeCmdMessage(ModbusMessage msg)
+        //{
+        //    String cmd = (String)msg.Data["Cmd"];
+        //    if ("Start".Equals(cmd))
+        //    {
+        //        this.MPF_Cmd = "Start";
+        //    }
+        //    if ("Reset".Equals(cmd))
+        //    {
+        //        this.MPF_Cmd = "Reset";
+        //    }
+        //    if ("Stop".Equals(cmd))
+        //    {
+        //        this.MPF_Cmd = "Stop";
+        //    }
+        //    if ("Auto".Equals(cmd))
+        //    {
+        //        this.MPF_Cmd = "Auto";
+        //    }
+        //}
 
         public override void ReceiveMsg(String s)
         {

@@ -38,6 +38,24 @@ namespace GTLutils
             //if (myThread != null) myThread.Abort();
         }
 
+        public delegate void cmdDelegate();
+        public event cmdDelegate cmdEvent;
+        private string cmd;
+        public string Glb_Cmd
+        {
+            get
+            {
+                return cmd;
+            }
+            set
+            {
+                cmd = value;
+                cmdEvent();
+
+            }
+        }
+
+
         private bool isTerminating;
         public override void init()
         {
@@ -149,7 +167,26 @@ namespace GTLutils
         * decodeCmdMessage函数，处理CMD命令的函数
         * 虚函数实现，可根据需要在仪器类中实现相关处理方法
         */
-        public virtual void decodeCmdMessage(ModbusMessage s) { }
+        public virtual void decodeCmdMessage(ModbusMessage msg) 
+        {
+            String cmd = (String)msg.Data["Cmd"];
+            if ("Start".Equals(cmd))
+            {
+                this.Glb_Cmd = "Start";
+            }
+            if ("Reset".Equals(cmd))
+            {
+                this.Glb_Cmd = "Reset";
+            }
+            if ("Stop".Equals(cmd))
+            {
+                this.Glb_Cmd = "Stop";
+            }
+            if ("Auto".Equals(cmd))
+            {
+                this.Glb_Cmd = "Auto";
+            }
+        }
         /*
          * 接受数据函数，每次收到数据会自动调用该函数进行解析成ModBusMessage
          * 该函数会根据MessageType去调用不同的解析函数

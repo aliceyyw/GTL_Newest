@@ -54,6 +54,8 @@
             this.stateComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.currentCmdTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.displayPanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -154,6 +156,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.currentCmdTextBox);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.setButton);
             this.groupBox1.Controls.Add(this.sampleTimeTextBox);
             this.groupBox1.Controls.Add(this.dispenTimeTextBox);
@@ -287,6 +291,24 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(18, 260);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 12);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "command";
+            // 
+            // currentCmdTextBox
+            // 
+            this.currentCmdTextBox.Enabled = false;
+            this.currentCmdTextBox.Location = new System.Drawing.Point(81, 255);
+            this.currentCmdTextBox.Name = "currentCmdTextBox";
+            this.currentCmdTextBox.Size = new System.Drawing.Size(70, 21);
+            this.currentCmdTextBox.TabIndex = 27;
+            this.currentCmdTextBox.TextChanged += new System.EventHandler(this.currentCmdTextBox_TextChanged);
+            // 
             // AutoDispenDeviceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -335,5 +357,7 @@
         private System.Windows.Forms.TextBox totalNumberTextBox;
         private System.Windows.Forms.Label totalNumberLabel;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox currentCmdTextBox;
+        private System.Windows.Forms.Label label7;
     }
 }

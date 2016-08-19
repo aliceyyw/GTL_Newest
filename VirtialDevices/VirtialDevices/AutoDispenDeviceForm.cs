@@ -33,6 +33,11 @@ namespace VirtialDevices
                 stateComboBox.Items.Add(s);
             }
             stateComboBox.SelectedIndex = 0;
+            
+        }
+        public void DispenDevice_cmdEvent()
+        {
+            currentCmdTextBox.Text = DispenDevice.Glb_Cmd;
         }
 
         private void AutoDispenDeviceForm_Load(object sender, EventArgs e)
@@ -122,6 +127,7 @@ namespace VirtialDevices
                     totalNumberTextBox.Text = DispenDevice.MDF_NumsperStack.ToString();
                     capTextBox.Text = DispenDevice.MDF_VolsperDish.ToString();
                     leftNumberTextBox.Text = DispenDevice.getLeft().ToString();
+                  //  currentCmdTextBox.Text = DispenDevice.Glb_Cmd;
                 }
                 else
                 {
@@ -138,6 +144,11 @@ namespace VirtialDevices
                 capTextBox.Text = TwincatDevice.getVol().ToString();
                 leftNumberTextBox.Text = TwincatDevice.getLeft().ToString();
             }
+        }
+
+        private void currentCmdTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
