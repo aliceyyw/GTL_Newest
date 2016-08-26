@@ -27,6 +27,11 @@ namespace VirtialDevices
             InitializeComponent();
         }
 
+        public void LiquidProcessDevice_cmdEvent()
+        {
+            currentCmdTextBox.Text = alcDevice.Glb_Cmd;
+        }
+
         private void setPaltesByMsg(String msg)
         {
             try
@@ -140,6 +145,31 @@ namespace VirtialDevices
         {
             this.Close();
             FatherForm.Enabled = true;
+        }
+
+        private void send_cmd(String cmd)
+        {
+            alcDevice.SendModBusMsg(ModbusMessage.MessageType.CMD, "Cmd", cmd);
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            send_cmd("Reset");
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            send_cmd("Start");
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            send_cmd("Stop");
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            send_cmd("Auto");
         }
     }
 }

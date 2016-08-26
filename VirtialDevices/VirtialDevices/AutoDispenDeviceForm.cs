@@ -40,6 +40,11 @@ namespace VirtialDevices
             currentCmdTextBox.Text = DispenDevice.Glb_Cmd;
         }
 
+        private void send_cmd(String cmd)
+        {
+            DispenDevice.SendModBusMsg(ModbusMessage.MessageType.CMD, "Cmd", cmd);
+        }
+
         private void AutoDispenDeviceForm_Load(object sender, EventArgs e)
         {
             FatherForm.Enabled = false;
@@ -149,6 +154,26 @@ namespace VirtialDevices
         private void currentCmdTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            send_cmd("Reset");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            send_cmd("Start");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            send_cmd("Stop");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            send_cmd("Auto");
         }
     }
 }

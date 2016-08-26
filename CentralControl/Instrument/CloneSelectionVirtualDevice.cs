@@ -149,14 +149,7 @@ namespace Instrument
         public void setZhouChangMianJiBi_Max(string max) {  SCP_MaxPARate = double.Parse(max); }
         public void setZhouChangMianJiBi_Min(string min) {  SCP_MinPARate = double.Parse(min); }
 
-        public override void ReceiveMsg(String s)
-        {
-            ModbusMessage message = ModbusMessageHelper.decodeModbusMessage(s);
-            //switch (message.MsgType)
-            {
-
-            }
-        }
+       
     }
 
 

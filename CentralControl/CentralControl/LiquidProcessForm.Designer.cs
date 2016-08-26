@@ -30,6 +30,44 @@
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.仪器信息 = new System.Windows.Forms.TabPage();
+            this.logPanel = new System.Windows.Forms.Panel();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.currentCmdTextBox = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.button44 = new System.Windows.Forms.Button();
+            this.button45 = new System.Windows.Forms.Button();
+            this.button46 = new System.Windows.Forms.Button();
+            this.button47 = new System.Windows.Forms.Button();
+            this.logListView = new System.Windows.Forms.ListView();
+            this.typeColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.timeColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.deviceColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label27 = new System.Windows.Forms.Label();
+            this.basicPanel = new System.Windows.Forms.Panel();
+            this.isVirtualCheckBox = new System.Windows.Forms.CheckBox();
+            this.serialIDTextBox = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.codeTextBox = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.identifyIDTextBox = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.deviceIPTextBox = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.deviceNameTextBox = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.localIPTextBox = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.setSampleTimeButton = new System.Windows.Forms.Button();
+            this.sampleTimeTextBox = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.currentStatusLabel = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.deviceNameLabel = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button43 = new System.Windows.Forms.Button();
             this.button42 = new System.Windows.Forms.Button();
@@ -106,38 +144,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.仪器信息 = new System.Windows.Forms.TabPage();
-            this.basicPanel = new System.Windows.Forms.Panel();
-            this.isVirtualCheckBox = new System.Windows.Forms.CheckBox();
-            this.serialIDTextBox = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.codeTextBox = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.identifyIDTextBox = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.deviceIPTextBox = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.deviceNameTextBox = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.localIPTextBox = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.setSampleTimeButton = new System.Windows.Forms.Button();
-            this.sampleTimeTextBox = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.currentStatusLabel = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.deviceNameLabel = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.logPanel = new System.Windows.Forms.Panel();
-            this.logListView = new System.Windows.Forms.ListView();
-            this.typeColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.timeColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.deviceColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.dataColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label27 = new System.Windows.Forms.Label();
-            this.exitButton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
+            this.仪器信息.SuspendLayout();
+            this.logPanel.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.basicPanel.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -146,9 +157,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.仪器信息.SuspendLayout();
-            this.basicPanel.SuspendLayout();
-            this.logPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -159,9 +167,361 @@
             this.tabControl1.Location = new System.Drawing.Point(2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(663, 466);
+            this.tabControl1.Size = new System.Drawing.Size(742, 461);
             this.tabControl1.TabIndex = 1;
             this.tabControl1.Deselecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabControl1_tabCancel);
+            // 
+            // 仪器信息
+            // 
+            this.仪器信息.Controls.Add(this.logPanel);
+            this.仪器信息.Controls.Add(this.basicPanel);
+            this.仪器信息.Location = new System.Drawing.Point(4, 22);
+            this.仪器信息.Name = "仪器信息";
+            this.仪器信息.Size = new System.Drawing.Size(734, 435);
+            this.仪器信息.TabIndex = 2;
+            this.仪器信息.Text = "仪器信息";
+            this.仪器信息.UseVisualStyleBackColor = true;
+            // 
+            // logPanel
+            // 
+            this.logPanel.Controls.Add(this.exitButton);
+            this.logPanel.Controls.Add(this.groupBox5);
+            this.logPanel.Controls.Add(this.logListView);
+            this.logPanel.Controls.Add(this.label27);
+            this.logPanel.Location = new System.Drawing.Point(6, 161);
+            this.logPanel.Name = "logPanel";
+            this.logPanel.Size = new System.Drawing.Size(689, 263);
+            this.logPanel.TabIndex = 4;
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(586, 135);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.TabIndex = 5;
+            this.exitButton.Text = "退出";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click_1);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.currentCmdTextBox);
+            this.groupBox5.Controls.Add(this.label38);
+            this.groupBox5.Controls.Add(this.button44);
+            this.groupBox5.Controls.Add(this.button45);
+            this.groupBox5.Controls.Add(this.button46);
+            this.groupBox5.Controls.Add(this.button47);
+            this.groupBox5.Location = new System.Drawing.Point(16, 178);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(615, 46);
+            this.groupBox5.TabIndex = 3;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "命令";
+            // 
+            // currentCmdTextBox
+            // 
+            this.currentCmdTextBox.Enabled = false;
+            this.currentCmdTextBox.Location = new System.Drawing.Point(526, 19);
+            this.currentCmdTextBox.Name = "currentCmdTextBox";
+            this.currentCmdTextBox.ReadOnly = true;
+            this.currentCmdTextBox.Size = new System.Drawing.Size(70, 21);
+            this.currentCmdTextBox.TabIndex = 31;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(463, 22);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(47, 12);
+            this.label38.TabIndex = 30;
+            this.label38.Text = "command";
+            // 
+            // button44
+            // 
+            this.button44.Location = new System.Drawing.Point(366, 17);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(75, 23);
+            this.button44.TabIndex = 3;
+            this.button44.Text = "自动";
+            this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.button44_Click);
+            // 
+            // button45
+            // 
+            this.button45.Location = new System.Drawing.Point(254, 17);
+            this.button45.Name = "button45";
+            this.button45.Size = new System.Drawing.Size(75, 23);
+            this.button45.TabIndex = 2;
+            this.button45.Text = "急停";
+            this.button45.UseVisualStyleBackColor = true;
+            this.button45.Click += new System.EventHandler(this.button45_Click);
+            // 
+            // button46
+            // 
+            this.button46.Location = new System.Drawing.Point(134, 17);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(75, 23);
+            this.button46.TabIndex = 1;
+            this.button46.Text = "开始";
+            this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.button46_Click);
+            // 
+            // button47
+            // 
+            this.button47.Location = new System.Drawing.Point(27, 17);
+            this.button47.Name = "button47";
+            this.button47.Size = new System.Drawing.Size(75, 23);
+            this.button47.TabIndex = 0;
+            this.button47.Text = "复位";
+            this.button47.UseVisualStyleBackColor = true;
+            this.button47.Click += new System.EventHandler(this.button47_Click);
+            // 
+            // logListView
+            // 
+            this.logListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.typeColumnHeader,
+            this.timeColumnHeader,
+            this.deviceColumnHeader,
+            this.dataColumnHeader});
+            this.logListView.Location = new System.Drawing.Point(19, 29);
+            this.logListView.Name = "logListView";
+            this.logListView.Size = new System.Drawing.Size(561, 129);
+            this.logListView.TabIndex = 1;
+            this.logListView.UseCompatibleStateImageBehavior = false;
+            this.logListView.View = System.Windows.Forms.View.Details;
+            // 
+            // typeColumnHeader
+            // 
+            this.typeColumnHeader.Text = "接收/发送";
+            this.typeColumnHeader.Width = 66;
+            // 
+            // timeColumnHeader
+            // 
+            this.timeColumnHeader.Text = "时间";
+            this.timeColumnHeader.Width = 36;
+            // 
+            // deviceColumnHeader
+            // 
+            this.deviceColumnHeader.Text = "仪器代号";
+            // 
+            // dataColumnHeader
+            // 
+            this.dataColumnHeader.Text = "数据";
+            this.dataColumnHeader.Width = 377;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(17, 10);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(65, 12);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "数据履历：";
+            // 
+            // basicPanel
+            // 
+            this.basicPanel.Controls.Add(this.isVirtualCheckBox);
+            this.basicPanel.Controls.Add(this.serialIDTextBox);
+            this.basicPanel.Controls.Add(this.label17);
+            this.basicPanel.Controls.Add(this.codeTextBox);
+            this.basicPanel.Controls.Add(this.label18);
+            this.basicPanel.Controls.Add(this.identifyIDTextBox);
+            this.basicPanel.Controls.Add(this.label19);
+            this.basicPanel.Controls.Add(this.deviceIPTextBox);
+            this.basicPanel.Controls.Add(this.label20);
+            this.basicPanel.Controls.Add(this.deviceNameTextBox);
+            this.basicPanel.Controls.Add(this.label21);
+            this.basicPanel.Controls.Add(this.localIPTextBox);
+            this.basicPanel.Controls.Add(this.label22);
+            this.basicPanel.Controls.Add(this.setSampleTimeButton);
+            this.basicPanel.Controls.Add(this.sampleTimeTextBox);
+            this.basicPanel.Controls.Add(this.label23);
+            this.basicPanel.Controls.Add(this.label24);
+            this.basicPanel.Controls.Add(this.currentStatusLabel);
+            this.basicPanel.Controls.Add(this.label25);
+            this.basicPanel.Controls.Add(this.deviceNameLabel);
+            this.basicPanel.Controls.Add(this.label26);
+            this.basicPanel.Location = new System.Drawing.Point(3, 3);
+            this.basicPanel.Name = "basicPanel";
+            this.basicPanel.Size = new System.Drawing.Size(692, 152);
+            this.basicPanel.TabIndex = 1;
+            // 
+            // isVirtualCheckBox
+            // 
+            this.isVirtualCheckBox.AutoSize = true;
+            this.isVirtualCheckBox.Location = new System.Drawing.Point(265, 7);
+            this.isVirtualCheckBox.Name = "isVirtualCheckBox";
+            this.isVirtualCheckBox.Size = new System.Drawing.Size(72, 16);
+            this.isVirtualCheckBox.TabIndex = 22;
+            this.isVirtualCheckBox.Text = "虚拟仪器";
+            this.isVirtualCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // serialIDTextBox
+            // 
+            this.serialIDTextBox.Location = new System.Drawing.Point(401, 119);
+            this.serialIDTextBox.Name = "serialIDTextBox";
+            this.serialIDTextBox.Size = new System.Drawing.Size(167, 21);
+            this.serialIDTextBox.TabIndex = 21;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(342, 123);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(53, 12);
+            this.label17.TabIndex = 20;
+            this.label17.Text = "序列号：";
+            // 
+            // codeTextBox
+            // 
+            this.codeTextBox.Location = new System.Drawing.Point(151, 119);
+            this.codeTextBox.Name = "codeTextBox";
+            this.codeTextBox.Size = new System.Drawing.Size(162, 21);
+            this.codeTextBox.TabIndex = 19;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(90, 123);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(41, 12);
+            this.label18.TabIndex = 18;
+            this.label18.Text = "代码：";
+            // 
+            // identifyIDTextBox
+            // 
+            this.identifyIDTextBox.Location = new System.Drawing.Point(401, 92);
+            this.identifyIDTextBox.Name = "identifyIDTextBox";
+            this.identifyIDTextBox.Size = new System.Drawing.Size(167, 21);
+            this.identifyIDTextBox.TabIndex = 17;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(342, 96);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(53, 12);
+            this.label19.TabIndex = 16;
+            this.label19.Text = "识别码：";
+            // 
+            // deviceIPTextBox
+            // 
+            this.deviceIPTextBox.Location = new System.Drawing.Point(151, 61);
+            this.deviceIPTextBox.Name = "deviceIPTextBox";
+            this.deviceIPTextBox.Size = new System.Drawing.Size(162, 21);
+            this.deviceIPTextBox.TabIndex = 15;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(90, 65);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(53, 12);
+            this.label20.TabIndex = 14;
+            this.label20.Text = "仪器IP：";
+            // 
+            // deviceNameTextBox
+            // 
+            this.deviceNameTextBox.Location = new System.Drawing.Point(151, 92);
+            this.deviceNameTextBox.Name = "deviceNameTextBox";
+            this.deviceNameTextBox.Size = new System.Drawing.Size(162, 21);
+            this.deviceNameTextBox.TabIndex = 13;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(90, 96);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(41, 12);
+            this.label21.TabIndex = 12;
+            this.label21.Text = "名称：";
+            // 
+            // localIPTextBox
+            // 
+            this.localIPTextBox.Location = new System.Drawing.Point(401, 62);
+            this.localIPTextBox.Name = "localIPTextBox";
+            this.localIPTextBox.Size = new System.Drawing.Size(167, 21);
+            this.localIPTextBox.TabIndex = 11;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(342, 65);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(53, 12);
+            this.label22.TabIndex = 10;
+            this.label22.Text = "本地IP：";
+            // 
+            // setSampleTimeButton
+            // 
+            this.setSampleTimeButton.Location = new System.Drawing.Point(479, 33);
+            this.setSampleTimeButton.Name = "setSampleTimeButton";
+            this.setSampleTimeButton.Size = new System.Drawing.Size(75, 23);
+            this.setSampleTimeButton.TabIndex = 9;
+            this.setSampleTimeButton.Text = "设定";
+            this.setSampleTimeButton.UseVisualStyleBackColor = true;
+            this.setSampleTimeButton.Click += new System.EventHandler(this.setSampleTimeButton_Click);
+            // 
+            // sampleTimeTextBox
+            // 
+            this.sampleTimeTextBox.Location = new System.Drawing.Point(355, 29);
+            this.sampleTimeTextBox.Name = "sampleTimeTextBox";
+            this.sampleTimeTextBox.Size = new System.Drawing.Size(100, 21);
+            this.sampleTimeTextBox.TabIndex = 8;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(19, 65);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(65, 12);
+            this.label23.TabIndex = 7;
+            this.label23.Text = "仪器信息：";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(263, 38);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(95, 12);
+            this.label24.TabIndex = 6;
+            this.label24.Text = "采样时间（S）：";
+            // 
+            // currentStatusLabel
+            // 
+            this.currentStatusLabel.AutoSize = true;
+            this.currentStatusLabel.Location = new System.Drawing.Point(90, 38);
+            this.currentStatusLabel.Name = "currentStatusLabel";
+            this.currentStatusLabel.Size = new System.Drawing.Size(41, 12);
+            this.currentStatusLabel.TabIndex = 3;
+            this.currentStatusLabel.Text = "label3";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(17, 38);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(65, 12);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "当前状态：";
+            // 
+            // deviceNameLabel
+            // 
+            this.deviceNameLabel.AutoSize = true;
+            this.deviceNameLabel.Location = new System.Drawing.Point(76, 12);
+            this.deviceNameLabel.Name = "deviceNameLabel";
+            this.deviceNameLabel.Size = new System.Drawing.Size(41, 12);
+            this.deviceNameLabel.TabIndex = 1;
+            this.deviceNameLabel.Text = "label2";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(17, 12);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(53, 12);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "仪器名：";
             // 
             // tabPage1
             // 
@@ -174,7 +534,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(655, 440);
+            this.tabPage1.Size = new System.Drawing.Size(734, 435);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "工作页面";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -649,7 +1009,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(655, 440);
+            this.tabPage2.Size = new System.Drawing.Size(734, 435);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "配置页面";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -748,8 +1108,7 @@
             this.button20.TabIndex = 19;
             this.button20.Text = "button20";
             this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(button20_click);
-
+            this.button20.Click += new System.EventHandler(this.button20_click);
             // 
             // button19
             // 
@@ -759,7 +1118,7 @@
             this.button19.TabIndex = 18;
             this.button19.Text = "button19";
             this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(button19_click);
+            this.button19.Click += new System.EventHandler(this.button19_click);
             // 
             // button18
             // 
@@ -769,7 +1128,7 @@
             this.button18.TabIndex = 17;
             this.button18.Text = "button18";
             this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(button18_click);
+            this.button18.Click += new System.EventHandler(this.button18_click);
             // 
             // button17
             // 
@@ -779,7 +1138,7 @@
             this.button17.TabIndex = 16;
             this.button17.Text = "button17";
             this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(button17_click);
+            this.button17.Click += new System.EventHandler(this.button17_click);
             // 
             // button16
             // 
@@ -789,7 +1148,7 @@
             this.button16.TabIndex = 15;
             this.button16.Text = "button16";
             this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(button16_click);
+            this.button16.Click += new System.EventHandler(this.button16_click);
             // 
             // button15
             // 
@@ -799,7 +1158,7 @@
             this.button15.TabIndex = 14;
             this.button15.Text = "button15";
             this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(button15_click);
+            this.button15.Click += new System.EventHandler(this.button15_click);
             // 
             // button14
             // 
@@ -809,7 +1168,7 @@
             this.button14.TabIndex = 13;
             this.button14.Text = "button14";
             this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(button14_click);
+            this.button14.Click += new System.EventHandler(this.button14_click);
             // 
             // button13
             // 
@@ -819,7 +1178,7 @@
             this.button13.TabIndex = 12;
             this.button13.Text = "button13";
             this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(button13_click);
+            this.button13.Click += new System.EventHandler(this.button13_click);
             // 
             // button12
             // 
@@ -829,7 +1188,7 @@
             this.button12.TabIndex = 11;
             this.button12.Text = "button12";
             this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(button12_click);
+            this.button12.Click += new System.EventHandler(this.button12_click);
             // 
             // button11
             // 
@@ -839,7 +1198,7 @@
             this.button11.TabIndex = 10;
             this.button11.Text = "button11";
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(button11_click);
+            this.button11.Click += new System.EventHandler(this.button11_click);
             // 
             // button10
             // 
@@ -849,7 +1208,7 @@
             this.button10.TabIndex = 9;
             this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(button10_click);
+            this.button10.Click += new System.EventHandler(this.button10_click);
             // 
             // button9
             // 
@@ -859,7 +1218,7 @@
             this.button9.TabIndex = 8;
             this.button9.Text = "button9";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(button9_click);
+            this.button9.Click += new System.EventHandler(this.button9_click);
             // 
             // button8
             // 
@@ -869,7 +1228,7 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(button8_click);
+            this.button8.Click += new System.EventHandler(this.button8_click);
             // 
             // button7
             // 
@@ -879,7 +1238,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(button7_click);
+            this.button7.Click += new System.EventHandler(this.button7_click);
             // 
             // button6
             // 
@@ -889,7 +1248,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(button6_click);
+            this.button6.Click += new System.EventHandler(this.button6_click);
             // 
             // button5
             // 
@@ -899,7 +1258,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(button5_click);
+            this.button5.Click += new System.EventHandler(this.button5_click);
             // 
             // button4
             // 
@@ -909,7 +1268,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(button4_click);
+            this.button4.Click += new System.EventHandler(this.button4_click);
             // 
             // button3
             // 
@@ -919,7 +1278,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(button3_click);
+            this.button3.Click += new System.EventHandler(this.button3_click);
             // 
             // button2
             // 
@@ -929,7 +1288,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(button2_click);
+            this.button2.Click += new System.EventHandler(this.button2_click);
             // 
             // button1
             // 
@@ -939,295 +1298,26 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(button1_click);
+            this.button1.Click += new System.EventHandler(this.button1_click);
             // 
-            // 仪器信息
-            // 
-            this.仪器信息.Controls.Add(this.exitButton);
-            this.仪器信息.Controls.Add(this.logPanel);
-            this.仪器信息.Controls.Add(this.basicPanel);
-            this.仪器信息.Location = new System.Drawing.Point(4, 22);
-            this.仪器信息.Name = "仪器信息";
-            this.仪器信息.Size = new System.Drawing.Size(655, 440);
-            this.仪器信息.TabIndex = 2;
-            this.仪器信息.Text = "仪器信息";
-            this.仪器信息.UseVisualStyleBackColor = true;
-            // 
-            // basicPanel
-            // 
-            this.basicPanel.Controls.Add(this.isVirtualCheckBox);
-            this.basicPanel.Controls.Add(this.serialIDTextBox);
-            this.basicPanel.Controls.Add(this.label17);
-            this.basicPanel.Controls.Add(this.codeTextBox);
-            this.basicPanel.Controls.Add(this.label18);
-            this.basicPanel.Controls.Add(this.identifyIDTextBox);
-            this.basicPanel.Controls.Add(this.label19);
-            this.basicPanel.Controls.Add(this.deviceIPTextBox);
-            this.basicPanel.Controls.Add(this.label20);
-            this.basicPanel.Controls.Add(this.deviceNameTextBox);
-            this.basicPanel.Controls.Add(this.label21);
-            this.basicPanel.Controls.Add(this.localIPTextBox);
-            this.basicPanel.Controls.Add(this.label22);
-            this.basicPanel.Controls.Add(this.setSampleTimeButton);
-            this.basicPanel.Controls.Add(this.sampleTimeTextBox);
-            this.basicPanel.Controls.Add(this.label23);
-            this.basicPanel.Controls.Add(this.label24);
-            this.basicPanel.Controls.Add(this.currentStatusLabel);
-            this.basicPanel.Controls.Add(this.label25);
-            this.basicPanel.Controls.Add(this.deviceNameLabel);
-            this.basicPanel.Controls.Add(this.label26);
-            this.basicPanel.Location = new System.Drawing.Point(3, 3);
-            this.basicPanel.Name = "basicPanel";
-            this.basicPanel.Size = new System.Drawing.Size(596, 152);
-            this.basicPanel.TabIndex = 1;
-            // 
-            // isVirtualCheckBox
-            // 
-            this.isVirtualCheckBox.AutoSize = true;
-            this.isVirtualCheckBox.Location = new System.Drawing.Point(265, 7);
-            this.isVirtualCheckBox.Name = "isVirtualCheckBox";
-            this.isVirtualCheckBox.Size = new System.Drawing.Size(72, 16);
-            this.isVirtualCheckBox.TabIndex = 22;
-            this.isVirtualCheckBox.Text = "虚拟仪器";
-            this.isVirtualCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // serialIDTextBox
-            // 
-            this.serialIDTextBox.Location = new System.Drawing.Point(401, 119);
-            this.serialIDTextBox.Name = "serialIDTextBox";
-            this.serialIDTextBox.Size = new System.Drawing.Size(167, 21);
-            this.serialIDTextBox.TabIndex = 21;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(342, 123);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(53, 12);
-            this.label17.TabIndex = 20;
-            this.label17.Text = "序列号：";
-            // 
-            // codeTextBox
-            // 
-            this.codeTextBox.Location = new System.Drawing.Point(151, 119);
-            this.codeTextBox.Name = "codeTextBox";
-            this.codeTextBox.Size = new System.Drawing.Size(162, 21);
-            this.codeTextBox.TabIndex = 19;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(90, 123);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(41, 12);
-            this.label18.TabIndex = 18;
-            this.label18.Text = "代码：";
-            // 
-            // identifyIDTextBox
-            // 
-            this.identifyIDTextBox.Location = new System.Drawing.Point(401, 92);
-            this.identifyIDTextBox.Name = "identifyIDTextBox";
-            this.identifyIDTextBox.Size = new System.Drawing.Size(167, 21);
-            this.identifyIDTextBox.TabIndex = 17;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(342, 96);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(53, 12);
-            this.label19.TabIndex = 16;
-            this.label19.Text = "识别码：";
-            // 
-            // deviceIPTextBox
-            // 
-            this.deviceIPTextBox.Location = new System.Drawing.Point(151, 61);
-            this.deviceIPTextBox.Name = "deviceIPTextBox";
-            this.deviceIPTextBox.Size = new System.Drawing.Size(162, 21);
-            this.deviceIPTextBox.TabIndex = 15;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(90, 65);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 12);
-            this.label20.TabIndex = 14;
-            this.label20.Text = "仪器IP：";
-            // 
-            // deviceNameTextBox
-            // 
-            this.deviceNameTextBox.Location = new System.Drawing.Point(151, 92);
-            this.deviceNameTextBox.Name = "deviceNameTextBox";
-            this.deviceNameTextBox.Size = new System.Drawing.Size(162, 21);
-            this.deviceNameTextBox.TabIndex = 13;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(90, 96);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 12);
-            this.label21.TabIndex = 12;
-            this.label21.Text = "名称：";
-            // 
-            // localIPTextBox
-            // 
-            this.localIPTextBox.Location = new System.Drawing.Point(401, 62);
-            this.localIPTextBox.Name = "localIPTextBox";
-            this.localIPTextBox.Size = new System.Drawing.Size(167, 21);
-            this.localIPTextBox.TabIndex = 11;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(342, 65);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(53, 12);
-            this.label22.TabIndex = 10;
-            this.label22.Text = "本地IP：";
-            // 
-            // setSampleTimeButton
-            // 
-            this.setSampleTimeButton.Location = new System.Drawing.Point(479, 33);
-            this.setSampleTimeButton.Name = "setSampleTimeButton";
-            this.setSampleTimeButton.Size = new System.Drawing.Size(75, 23);
-            this.setSampleTimeButton.TabIndex = 9;
-            this.setSampleTimeButton.Text = "设定";
-            this.setSampleTimeButton.UseVisualStyleBackColor = true;
-            // 
-            // sampleTimeTextBox
-            // 
-            this.sampleTimeTextBox.Location = new System.Drawing.Point(355, 29);
-            this.sampleTimeTextBox.Name = "sampleTimeTextBox";
-            this.sampleTimeTextBox.Size = new System.Drawing.Size(100, 21);
-            this.sampleTimeTextBox.TabIndex = 8;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(19, 65);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(65, 12);
-            this.label23.TabIndex = 7;
-            this.label23.Text = "仪器信息：";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(263, 38);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(95, 12);
-            this.label24.TabIndex = 6;
-            this.label24.Text = "采样时间（S）：";
-            // 
-            // currentStatusLabel
-            // 
-            this.currentStatusLabel.AutoSize = true;
-            this.currentStatusLabel.Location = new System.Drawing.Point(90, 38);
-            this.currentStatusLabel.Name = "currentStatusLabel";
-            this.currentStatusLabel.Size = new System.Drawing.Size(41, 12);
-            this.currentStatusLabel.TabIndex = 3;
-            this.currentStatusLabel.Text = "label3";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(17, 38);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(65, 12);
-            this.label25.TabIndex = 2;
-            this.label25.Text = "当前状态：";
-            // 
-            // deviceNameLabel
-            // 
-            this.deviceNameLabel.AutoSize = true;
-            this.deviceNameLabel.Location = new System.Drawing.Point(76, 12);
-            this.deviceNameLabel.Name = "deviceNameLabel";
-            this.deviceNameLabel.Size = new System.Drawing.Size(41, 12);
-            this.deviceNameLabel.TabIndex = 1;
-            this.deviceNameLabel.Text = "label2";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(17, 12);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(53, 12);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "仪器名：";
-            // 
-            // logPanel
-            // 
-            this.logPanel.Controls.Add(this.logListView);
-            this.logPanel.Controls.Add(this.label27);
-            this.logPanel.Location = new System.Drawing.Point(6, 174);
-            this.logPanel.Name = "logPanel";
-            this.logPanel.Size = new System.Drawing.Size(596, 221);
-            this.logPanel.TabIndex = 4;
-            // 
-            // logListView
-            // 
-            this.logListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.typeColumnHeader,
-            this.timeColumnHeader,
-            this.deviceColumnHeader,
-            this.dataColumnHeader});
-            this.logListView.Location = new System.Drawing.Point(19, 29);
-            this.logListView.Name = "logListView";
-            this.logListView.Size = new System.Drawing.Size(561, 189);
-            this.logListView.TabIndex = 1;
-            this.logListView.UseCompatibleStateImageBehavior = false;
-            this.logListView.View = System.Windows.Forms.View.Details;
-            // 
-            // typeColumnHeader
-            // 
-            this.typeColumnHeader.Text = "接收/发送";
-            this.typeColumnHeader.Width = 66;
-            // 
-            // timeColumnHeader
-            // 
-            this.timeColumnHeader.Text = "时间";
-            this.timeColumnHeader.Width = 36;
-            // 
-            // deviceColumnHeader
-            // 
-            this.deviceColumnHeader.Text = "仪器代号";
-            // 
-            // dataColumnHeader
-            // 
-            this.dataColumnHeader.Text = "数据";
-            this.dataColumnHeader.Width = 377;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(17, 10);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(65, 12);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "数据履历：";
-            // 
-            // exitButton
-            // 
-            this.exitButton.Location = new System.Drawing.Point(511, 401);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 23);
-            this.exitButton.TabIndex = 5;
-            this.exitButton.Text = "退出";
-            this.exitButton.UseVisualStyleBackColor = true;
-            this.Click += new System.EventHandler(this.exitButton_Click);
-            // 
-            // LiquidProcessForm_new
+            // LiquidProcessForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(668, 460);
+            this.ClientSize = new System.Drawing.Size(746, 460);
             this.Controls.Add(this.tabControl1);
-            this.Name = "LiquidProcessForm_new";
+            this.Name = "LiquidProcessForm";
             this.Text = "LiquidProcessForm_new";
             this.Load += new System.EventHandler(this.LiquidProcessForm_new_Load);
+            this.Click += new System.EventHandler(this.exitButton_Click);
             this.tabControl1.ResumeLayout(false);
+            this.仪器信息.ResumeLayout(false);
+            this.logPanel.ResumeLayout(false);
+            this.logPanel.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.basicPanel.ResumeLayout(false);
+            this.basicPanel.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -1240,11 +1330,6 @@
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.仪器信息.ResumeLayout(false);
-            this.basicPanel.ResumeLayout(false);
-            this.basicPanel.PerformLayout();
-            this.logPanel.ResumeLayout(false);
-            this.logPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1359,6 +1444,13 @@
         private System.Windows.Forms.ColumnHeader dataColumnHeader;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox currentCmdTextBox;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Button button44;
+        private System.Windows.Forms.Button button45;
+        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Button button47;
 
     }
 }

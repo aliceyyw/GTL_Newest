@@ -36,6 +36,11 @@ namespace VirtialDevices
             stateComboBox.SelectedIndex = 0;
         }
 
+        public void PlateDevice_cmdEvent()
+        {
+            currentCmdTextBox.Text = PlateDevice.Glb_Cmd;
+        }
+
         private void AutoDispenDeviceForm_Load(object sender, EventArgs e)
         {
             FatherForm.Enabled = false;
@@ -145,5 +150,33 @@ namespace VirtialDevices
                 leftNumberTextBox.Text = TwincatDevice.getLeft().ToString();
             }
         }
+        private void send_cmd(String cmd)
+        {
+            PlateDevice.SendModBusMsg(ModbusMessage.MessageType.CMD, "Cmd", cmd);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            send_cmd("Reset");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            send_cmd("Start");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            send_cmd("Stop");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            send_cmd("Auto");
+        }
+
+      
+
+        
     }
 }

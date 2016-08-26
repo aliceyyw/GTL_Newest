@@ -26,6 +26,11 @@ namespace CentralControl
             stateComboBox.SelectedIndex = 0;
         }
 
+        public void PlateDevice_cmdEvent()
+        {
+            currentCmdTextBox.Text = PlateDevice.Glb_Cmd;
+        }
+
         private void sendButton_Click(object sender, EventArgs e)
         {
             String Num = "", Vol = "", msg = "";

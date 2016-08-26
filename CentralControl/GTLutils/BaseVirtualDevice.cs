@@ -32,12 +32,15 @@ namespace GTLutils
             mySocket = null;
         }
 
+      
+
         ~BaseVirtualDevice()
         {
             if (mySocket != null) mySocket.Close();
             //if (myThread != null) myThread.Abort();
         }
 
+        
         public delegate void cmdDelegate();
         public event cmdDelegate cmdEvent;
         private string cmd;

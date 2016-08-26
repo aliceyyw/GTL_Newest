@@ -399,6 +399,7 @@ namespace CentralControl
                             form.DispenTwincatDevice = (AutoDispenTwincatDevice)device;
                             form.IsSocket = false;
                         }
+                        form.DispenDevice.cmdEvent += new BaseVirtualDevice.cmdDelegate(form.DispenDevice_cmdEvent);
                         form.Show();
                         break;
                     case DeviceType.Plate:
@@ -406,6 +407,7 @@ namespace CentralControl
                         pform.FatherForm = this;
                         pform.IsSocket = true;
                         pform.PlateDevice = (AutoPlateVirtualDevice)device;
+                        pform.PlateDevice.cmdEvent += new BaseVirtualDevice.cmdDelegate(pform.PlateDevice_cmdEvent);
                         pform.Show();
                         break;
                     case DeviceType.Analysis:
@@ -419,12 +421,14 @@ namespace CentralControl
                         cForm.FatherForm = this;
                         cForm.IsSocket = true;
                         cForm.DeviceInfo = (CloneSelectionVirtualDevice)device;
+                        cForm.DeviceInfo.cmdEvent += new BaseVirtualDevice.cmdDelegate(cForm.CloneSelectionDevice_cmdEvent);
                         cForm.Show();
                         break;
                     case DeviceType.Liquid:
                         LiquidProcessForm forml = new LiquidProcessForm();
                         forml.FatherForm = this;
                         forml.DeviceInfo = device;
+                        forml.alcDevice.cmdEvent += new BaseVirtualDevice.cmdDelegate(forml.LiquidProcessDevice_cmdEvent);
                         forml.Show();
                         break;
                     case DeviceType.Matrix:
@@ -449,6 +453,11 @@ namespace CentralControl
 
                 }
             }
+        }
+
+        private void logAllListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

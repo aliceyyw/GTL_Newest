@@ -40,6 +40,8 @@
             this.totalNumberLabel = new System.Windows.Forms.Label();
             this.settingPanel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.currentCmdTextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.setButton = new System.Windows.Forms.Button();
             this.sampleTimeTextBox = new System.Windows.Forms.TextBox();
             this.dispenTimeTextBox = new System.Windows.Forms.TextBox();
@@ -54,11 +56,17 @@
             this.stateComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.displayPanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.settingPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -88,7 +96,7 @@
             this.groupBox2.Controls.Add(this.totalNumberLabel);
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(187, 293);
+            this.groupBox2.Size = new System.Drawing.Size(414, 293);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "显示";
@@ -154,6 +162,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.currentCmdTextBox);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.setButton);
             this.groupBox1.Controls.Add(this.sampleTimeTextBox);
             this.groupBox1.Controls.Add(this.dispenTimeTextBox);
@@ -173,6 +183,24 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "设定";
+            // 
+            // currentCmdTextBox
+            // 
+            this.currentCmdTextBox.Enabled = false;
+            this.currentCmdTextBox.Location = new System.Drawing.Point(92, 252);
+            this.currentCmdTextBox.Name = "currentCmdTextBox";
+            this.currentCmdTextBox.ReadOnly = true;
+            this.currentCmdTextBox.Size = new System.Drawing.Size(70, 21);
+            this.currentCmdTextBox.TabIndex = 29;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(29, 255);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 12);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "command";
             // 
             // setButton
             // 
@@ -287,13 +315,67 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // AutoDispenDeviceForm
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Location = new System.Drawing.Point(565, 26);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(137, 270);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "命令";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(35, 194);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "自动";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(35, 144);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "急停";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(35, 90);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "开始";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(35, 39);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "复位";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // AutoPlateDeviceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 329);
+            this.ClientSize = new System.Drawing.Size(723, 329);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.panel1);
-            this.Name = "AutoDispenDeviceForm";
+            this.Name = "AutoPlateDeviceForm";
             this.Text = "全自动培养基分装仪";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AutoDispenDeviceForm_FormClosing);
             this.Load += new System.EventHandler(this.AutoDispenDeviceForm_Load);
@@ -304,6 +386,7 @@
             this.settingPanel.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -335,5 +418,12 @@
         private System.Windows.Forms.TextBox totalNumberTextBox;
         private System.Windows.Forms.Label totalNumberLabel;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox currentCmdTextBox;
+        private System.Windows.Forms.Label label7;
     }
 }

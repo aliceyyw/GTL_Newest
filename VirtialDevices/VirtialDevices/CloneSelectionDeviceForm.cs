@@ -29,6 +29,11 @@ namespace VirtialDevices
             FatherForm.Enabled = true;
         }
 
+        public void CloneSelectionDevice_cmdEvent()
+        {
+            currentCmdTextBox.Text = DeviceInfo.Glb_Cmd;
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             //if (IsSocket)
@@ -175,6 +180,29 @@ namespace VirtialDevices
 
                 listView1.EndUpdate();
             }
+        }
+        private void send_cmd(String cmd)
+        {
+            DeviceInfo.SendModBusMsg(ModbusMessage.MessageType.CMD, "Cmd", cmd);
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            send_cmd("Reset");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            send_cmd("Start");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            send_cmd("Stop");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            send_cmd("Auto");
         }
 
     }

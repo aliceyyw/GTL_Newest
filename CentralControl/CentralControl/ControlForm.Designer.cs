@@ -125,6 +125,7 @@
             this.logAllListView.TabIndex = 0;
             this.logAllListView.UseCompatibleStateImageBehavior = false;
             this.logAllListView.View = System.Windows.Forms.View.Details;
+            this.logAllListView.SelectedIndexChanged += new System.EventHandler(this.logAllListView_SelectedIndexChanged);
             // 
             // typeColumnHeader
             // 

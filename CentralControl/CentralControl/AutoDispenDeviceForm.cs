@@ -52,7 +52,10 @@ namespace CentralControl
                 DispenTwincatDevice.SendNumAndVol(int.Parse(Num),float.Parse(Vol));
             }
         }
-
+        public void DispenDevice_cmdEvent()
+        {
+            currentCmdTextBox.Text = DispenDevice.Glb_Cmd;
+        }
         private void send_cmd(String cmd) 
         {
             if (IsSocket)
@@ -60,6 +63,8 @@ namespace CentralControl
             else 
                 DispenTwincatDevice.SendMsg(cmd);
         }
+
+        
 
         private void resetButton_Click(object sender, EventArgs e)
         {

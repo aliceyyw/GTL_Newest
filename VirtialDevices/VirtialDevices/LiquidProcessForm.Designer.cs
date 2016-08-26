@@ -74,10 +74,18 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.currentCmdTextBox = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -89,7 +97,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(26, 25);
+            this.groupBox1.Location = new System.Drawing.Point(21, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(163, 130);
             this.groupBox1.TabIndex = 0;
@@ -165,7 +173,7 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(29, 184);
+            this.groupBox2.Location = new System.Drawing.Point(24, 171);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(159, 139);
             this.groupBox2.TabIndex = 1;
@@ -234,7 +242,7 @@
             this.groupBox3.Controls.Add(this.textBox2);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Location = new System.Drawing.Point(32, 348);
+            this.groupBox3.Location = new System.Drawing.Point(27, 335);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(155, 114);
             this.groupBox3.TabIndex = 2;
@@ -317,7 +325,7 @@
             this.groupBox4.Controls.Add(this.button3);
             this.groupBox4.Controls.Add(this.button2);
             this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Location = new System.Drawing.Point(250, 24);
+            this.groupBox4.Location = new System.Drawing.Point(274, 12);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(411, 365);
             this.groupBox4.TabIndex = 3;
@@ -507,7 +515,7 @@
             // 
             // button21
             // 
-            this.button21.Location = new System.Drawing.Point(434, 416);
+            this.button21.Location = new System.Drawing.Point(704, 351);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(43, 22);
             this.button21.TabIndex = 4;
@@ -520,11 +528,85 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.currentCmdTextBox);
+            this.groupBox5.Controls.Add(this.label38);
+            this.groupBox5.Controls.Add(this.button22);
+            this.groupBox5.Controls.Add(this.button23);
+            this.groupBox5.Controls.Add(this.button24);
+            this.groupBox5.Controls.Add(this.button25);
+            this.groupBox5.Location = new System.Drawing.Point(223, 403);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(615, 46);
+            this.groupBox5.TabIndex = 5;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "命令";
+            // 
+            // currentCmdTextBox
+            // 
+            this.currentCmdTextBox.Enabled = false;
+            this.currentCmdTextBox.Location = new System.Drawing.Point(526, 19);
+            this.currentCmdTextBox.Name = "currentCmdTextBox";
+            this.currentCmdTextBox.ReadOnly = true;
+            this.currentCmdTextBox.Size = new System.Drawing.Size(70, 21);
+            this.currentCmdTextBox.TabIndex = 31;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(463, 22);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(47, 12);
+            this.label38.TabIndex = 30;
+            this.label38.Text = "command";
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(366, 17);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(75, 23);
+            this.button22.TabIndex = 3;
+            this.button22.Text = "自动";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(254, 17);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(75, 23);
+            this.button23.TabIndex = 2;
+            this.button23.Text = "急停";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(134, 17);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 23);
+            this.button24.TabIndex = 1;
+            this.button24.Text = "开始";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(27, 17);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(75, 23);
+            this.button25.TabIndex = 0;
+            this.button25.Text = "复位";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
             // LiquidProcessForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 469);
+            this.ClientSize = new System.Drawing.Size(860, 477);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -541,6 +623,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -592,5 +676,12 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox currentCmdTextBox;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button25;
     }
 }

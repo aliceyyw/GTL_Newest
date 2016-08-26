@@ -35,6 +35,10 @@ namespace CentralControl
             size = 20;
             InitializeComponent();
         }
+        public void LiquidProcessDevice_cmdEvent()
+        {
+            currentCmdTextBox.Text = alcDevice.Glb_Cmd;
+        }
 
         private void LiquidProcessForm_new_Load(object sender, EventArgs e)
         {
@@ -475,6 +479,40 @@ namespace CentralControl
                 //Database mydb = new Database();
                 //mydb.insertlpsplace(1, alcDevice.quYePan, alcDevice.muBiaoPan, alcDevice.xiYeLiang, alcDevice.xiYeSuDu, alcDevice.paiYeSuDu, alcDevice.xiYeWeiZhi, alcDevice.paiYeWeiZhi);
             }
+        }
+
+        private void send_cmd(String cmd)
+        {
+            alcDevice.SendModBusMsg(ModbusMessage.MessageType.CMD, "Cmd", cmd);
+        }
+        private void button47_Click(object sender, EventArgs e)
+        {
+            send_cmd("Reset");
+        }
+
+        private void button46_Click(object sender, EventArgs e)
+        {
+            send_cmd("Start");
+        }
+
+        private void button45_Click(object sender, EventArgs e)
+        {
+            send_cmd("Stop");
+        }
+
+        private void button44_Click(object sender, EventArgs e)
+        {
+            send_cmd("Auto");
+        }
+
+        private void setSampleTimeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitButton_Click_1(object sender, EventArgs e)
+        {
+
         }
 
 

@@ -181,16 +181,7 @@ namespace Instrument
 
 
         }
-        public override void ReceiveMsg(String s)
-        {
-            ModbusMessage message = ModbusMessageHelper.decodeModbusMessage(s);
-            switch (message.MsgType)
-            {
-                case ModbusMessage.MessageType.SET:
-                    decodeSetMessage(message);
-                    break;
-            }
-        }
+       
 
 
         public int MMR_CurentSelectIndex;

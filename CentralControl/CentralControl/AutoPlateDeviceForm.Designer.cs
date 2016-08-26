@@ -74,6 +74,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.refreshTimer = new System.Windows.Forms.Timer(this.components);
+            this.label16 = new System.Windows.Forms.Label();
+            this.currentCmdTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.basicPanel.SuspendLayout();
             this.s.SuspendLayout();
@@ -380,6 +382,8 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.currentCmdTextBox);
             this.panel2.Controls.Add(this.autoButton);
             this.panel2.Controls.Add(this.stopButton);
             this.panel2.Controls.Add(this.startButton);
@@ -501,6 +505,24 @@
             this.refreshTimer.Interval = 1000;
             this.refreshTimer.Tick += new System.EventHandler(this.refreshTimer_Tick);
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(485, 78);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(83, 12);
+            this.label16.TabIndex = 31;
+            this.label16.Text = "current_state";
+            // 
+            // currentCmdTextBox
+            // 
+            this.currentCmdTextBox.Enabled = false;
+            this.currentCmdTextBox.Location = new System.Drawing.Point(495, 100);
+            this.currentCmdTextBox.Name = "currentCmdTextBox";
+            this.currentCmdTextBox.ReadOnly = true;
+            this.currentCmdTextBox.Size = new System.Drawing.Size(70, 21);
+            this.currentCmdTextBox.TabIndex = 30;
+            // 
             // AutoPlateDeviceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -568,5 +590,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label deviceNameLabel;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox currentCmdTextBox;
     }
 }

@@ -18,6 +18,12 @@ namespace CentralControl
         public bool IsSocket;
         public CloneSelectionVirtualDevice DeviceInfo;
 
+
+        public void CloneSelectionDevice_cmdEvent()
+        {
+            currentCmdTextBox.Text = DeviceInfo.Glb_Cmd;
+        }
+
         private void setButton_Click(object sender, EventArgs e)
         {
             String Lower = "", Upper = "";
@@ -118,6 +124,33 @@ namespace CentralControl
         private void CloneSelectionDeviceForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             FatherForm.Enabled = true;
+        }
+
+     
+
+        private void send_cmd(String cmd)
+        {
+            DeviceInfo.SendModBusMsg(ModbusMessage.MessageType.CMD, "Cmd", cmd);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            send_cmd("Reset");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            send_cmd("Start");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            send_cmd("Stop");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            send_cmd("Auto");
         }
     }
 }

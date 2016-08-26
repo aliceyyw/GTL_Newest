@@ -242,11 +242,11 @@ namespace Instrument
             }
         }
 
-        public override void decodeCmdMessage(ModbusMessage msg)
-        {
-            String cmd = (String)msg.Data["Cmd"];
+        //public override void decodeCmdMessage(ModbusMessage msg)
+        //{
+        //    String cmd = (String)msg.Data["Cmd"];
 
-        }
+        //}
 
         public override void decodeSetMessage(ModbusMessage msg)
         {
@@ -329,23 +329,6 @@ namespace Instrument
             }
         }
 
-        public override void ReceiveMsg(String s)
-        {
-            ModbusMessage message = ModbusMessageHelper.decodeModbusMessage(s);
-            switch (message.MsgType)
-            {
-                case ModbusMessage.MessageType.CMD:
-                    decodeCmdMessage(message);
-                    break;
-                case ModbusMessage.MessageType.SET:
-                    decodeSetMessage(message);
-                    break;
-                case ModbusMessage.MessageType.REPORT:
-                    decodeReportMessage(message);
-                    break;
-                case ModbusMessage.MessageType.GET:
-                    break;
-            }
-        }
+       
     }
 }

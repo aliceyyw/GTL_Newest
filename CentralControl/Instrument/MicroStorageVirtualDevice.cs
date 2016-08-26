@@ -212,16 +212,7 @@ namespace Instrument
             }
         }
 
-        public override void ReceiveMsg(String s)
-        {
-            ModbusMessage message = ModbusMessageHelper.decodeModbusMessage(s);
-            switch (message.MsgType)
-            {
-                case ModbusMessage.MessageType.RESPONSE:
-                    decodeResponseMessage(message);
-                    break;
-            }
-        }
+       
 
     }
 }

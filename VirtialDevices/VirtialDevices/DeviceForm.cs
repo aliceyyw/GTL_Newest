@@ -197,6 +197,7 @@ namespace VirtialDevices
                     pForm.FatherForm = this;
                     pForm.IsSocket = true;
                     pForm.PlateDevice = (AutoPlateDevice)DeviceInfo;
+                    pForm.PlateDevice.cmdEvent += new BaseVirtualDevice.cmdDelegate(pForm.PlateDevice_cmdEvent);
                     pForm.Show();
                     break;
                 case DeviceType.Analysis:
@@ -211,12 +212,14 @@ namespace VirtialDevices
                     cForm.FatherForm = this;
                     cForm.IsSocket = true;
                     cForm.DeviceInfo = (CloneSelectionDevice)DeviceInfo;
+                    cForm.DeviceInfo.cmdEvent += new BaseVirtualDevice.cmdDelegate(cForm.CloneSelectionDevice_cmdEvent);
                     cForm.Show();
                     break;
                 case DeviceType.Liquid:
                     LiquidProcessForm lForm = new LiquidProcessForm();
                     lForm.FatherForm = this;
                     lForm.alcDevice = (LiquidProcessDevice)DeviceInfo;
+                    lForm.alcDevice.cmdEvent += new BaseVirtualDevice.cmdDelegate(lForm.LiquidProcessDevice_cmdEvent);
                     lForm.Show();
                     break;
 
