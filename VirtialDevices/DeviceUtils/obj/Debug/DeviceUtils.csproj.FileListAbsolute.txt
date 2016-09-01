@@ -7,6 +7,5 @@ D:\高通量仪器\GTL_stable\GTL\VirtialDevices\DeviceUtils\obj\Debug\DeviceUti
 F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceUtils\bin\Debug\DeviceUtils.dll
 F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceUtils\bin\Debug\DeviceUtils.pdb
 F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceUtils\bin\Debug\TwinCAT.Ads.dll
-F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceUtils\obj\Debug\DeviceUtils.csprojResolveAssemblyReference.cache
 F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceUtils\obj\Debug\DeviceUtils.dll
 F:\SJTU\wyy\GTL_Newest\VirtialDevices\DeviceUtils\obj\Debug\DeviceUtils.pdb

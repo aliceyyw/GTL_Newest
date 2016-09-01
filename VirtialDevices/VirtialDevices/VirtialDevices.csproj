@@ -166,6 +166,9 @@
     <EmbeddedResource Include="MatrixSystemDeviceForm.resx">
       <DependentUpon>MatrixSystemDeviceForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MicroReactorForm.resx">
+      <DependentUpon>MicroReactorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MultiTunnelDeviceForm.resx">
       <DependentUpon>MultiTunnelDeviceForm.cs</DependentUpon>
     </EmbeddedResource>

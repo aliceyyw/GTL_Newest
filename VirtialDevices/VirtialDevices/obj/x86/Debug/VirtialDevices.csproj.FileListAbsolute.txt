@@ -48,3 +48,4 @@ F:\SJTU\wyy\GTL_Newest\VirtialDevices\VirtialDevices\obj\x86\Debug\VirtialDevice
 F:\SJTU\wyy\GTL_Newest\VirtialDevices\VirtialDevices\obj\x86\Debug\VirtialDevices.Properties.Resources.resources
 F:\SJTU\wyy\GTL_Newest\VirtialDevices\VirtialDevices\obj\x86\Debug\VirtialDevices.AutoPlateDeviceForm.resources
 F:\SJTU\wyy\GTL_Newest\VirtialDevices\VirtialDevices\obj\x86\Debug\VirtialDevices.csproj.GenerateResource.Cache
+F:\SJTU\wyy\GTL_Newest\VirtialDevices\VirtialDevices\obj\x86\Debug\VirtialDevices.MicroReactorForm.resources

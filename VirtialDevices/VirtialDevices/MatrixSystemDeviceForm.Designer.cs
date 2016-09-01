@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("光强");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("x轴坐标");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("y轴坐标");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("当前占空比");
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("A");
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("B");
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("C");
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("D");
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("E");
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("F");
-            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("G");
-            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("H");
-            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("A");
-            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("B");
-            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("C");
-            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("D");
-            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("E");
-            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("F");
-            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("G");
-            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("H");
+            System.Windows.Forms.ListViewItem listViewItem81 = new System.Windows.Forms.ListViewItem("光强");
+            System.Windows.Forms.ListViewItem listViewItem82 = new System.Windows.Forms.ListViewItem("x轴坐标");
+            System.Windows.Forms.ListViewItem listViewItem83 = new System.Windows.Forms.ListViewItem("y轴坐标");
+            System.Windows.Forms.ListViewItem listViewItem84 = new System.Windows.Forms.ListViewItem("当前占空比");
+            System.Windows.Forms.ListViewItem listViewItem85 = new System.Windows.Forms.ListViewItem("A");
+            System.Windows.Forms.ListViewItem listViewItem86 = new System.Windows.Forms.ListViewItem("B");
+            System.Windows.Forms.ListViewItem listViewItem87 = new System.Windows.Forms.ListViewItem("C");
+            System.Windows.Forms.ListViewItem listViewItem88 = new System.Windows.Forms.ListViewItem("D");
+            System.Windows.Forms.ListViewItem listViewItem89 = new System.Windows.Forms.ListViewItem("E");
+            System.Windows.Forms.ListViewItem listViewItem90 = new System.Windows.Forms.ListViewItem("F");
+            System.Windows.Forms.ListViewItem listViewItem91 = new System.Windows.Forms.ListViewItem("G");
+            System.Windows.Forms.ListViewItem listViewItem92 = new System.Windows.Forms.ListViewItem("H");
+            System.Windows.Forms.ListViewItem listViewItem93 = new System.Windows.Forms.ListViewItem("A");
+            System.Windows.Forms.ListViewItem listViewItem94 = new System.Windows.Forms.ListViewItem("B");
+            System.Windows.Forms.ListViewItem listViewItem95 = new System.Windows.Forms.ListViewItem("C");
+            System.Windows.Forms.ListViewItem listViewItem96 = new System.Windows.Forms.ListViewItem("D");
+            System.Windows.Forms.ListViewItem listViewItem97 = new System.Windows.Forms.ListViewItem("E");
+            System.Windows.Forms.ListViewItem listViewItem98 = new System.Windows.Forms.ListViewItem("F");
+            System.Windows.Forms.ListViewItem listViewItem99 = new System.Windows.Forms.ListViewItem("G");
+            System.Windows.Forms.ListViewItem listViewItem100 = new System.Windows.Forms.ListViewItem("H");
             this.panel1 = new System.Windows.Forms.Panel();
             this.startButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
@@ -57,6 +57,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.currentCmdTextBox = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
             this.maDaTextBox = new System.Windows.Forms.TextBox();
             this.dianJiTextBox = new System.Windows.Forms.TextBox();
             this.yaoChuangTextBox = new System.Windows.Forms.TextBox();
@@ -208,6 +210,10 @@
             this.label52 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -229,13 +235,19 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.currentCmdTextBox);
+            this.panel1.Controls.Add(this.button10);
+            this.panel1.Controls.Add(this.label54);
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.startButton);
             this.panel1.Controls.Add(this.exitButton);
             this.panel1.Controls.Add(this.saveButton);
             this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(684, 575);
+            this.panel1.Size = new System.Drawing.Size(684, 624);
             this.panel1.TabIndex = 0;
             // 
             // startButton
@@ -280,10 +292,10 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(670, 507);
+            this.tabPage1.Size = new System.Drawing.Size(670, 506);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "显示";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -313,6 +325,24 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(652, 94);
             this.panel3.TabIndex = 3;
+            // 
+            // currentCmdTextBox
+            // 
+            this.currentCmdTextBox.Enabled = false;
+            this.currentCmdTextBox.Location = new System.Drawing.Point(133, 585);
+            this.currentCmdTextBox.Name = "currentCmdTextBox";
+            this.currentCmdTextBox.ReadOnly = true;
+            this.currentCmdTextBox.Size = new System.Drawing.Size(70, 21);
+            this.currentCmdTextBox.TabIndex = 33;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(70, 588);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(47, 12);
+            this.label54.TabIndex = 32;
+            this.label54.Text = "command";
             // 
             // maDaTextBox
             // 
@@ -806,10 +836,10 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.panel4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(670, 507);
+            this.tabPage2.Size = new System.Drawing.Size(670, 506);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "数据";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1143,10 +1173,10 @@
             this.columnHeader12});
             this.listView1.GridLines = true;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4});
+            listViewItem81,
+            listViewItem82,
+            listViewItem83,
+            listViewItem84});
             this.listView1.Location = new System.Drawing.Point(38, 45);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(566, 95);
@@ -1312,9 +1342,9 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.panel10);
-            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(670, 507);
+            this.tabPage3.Size = new System.Drawing.Size(670, 506);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "OD数据";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1352,14 +1382,14 @@
             this.columnHeader40});
             this.listView2.GridLines = true;
             this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5,
-            listViewItem6,
-            listViewItem7,
-            listViewItem8,
-            listViewItem9,
-            listViewItem10,
-            listViewItem11,
-            listViewItem12});
+            listViewItem85,
+            listViewItem86,
+            listViewItem87,
+            listViewItem88,
+            listViewItem89,
+            listViewItem90,
+            listViewItem91,
+            listViewItem92});
             this.listView2.Location = new System.Drawing.Point(6, 262);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(647, 158);
@@ -1483,14 +1513,14 @@
             this.columnHeader25});
             this.dataListView.GridLines = true;
             this.dataListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem13,
-            listViewItem14,
-            listViewItem15,
-            listViewItem16,
-            listViewItem17,
-            listViewItem18,
-            listViewItem19,
-            listViewItem20});
+            listViewItem93,
+            listViewItem94,
+            listViewItem95,
+            listViewItem96,
+            listViewItem97,
+            listViewItem98,
+            listViewItem99,
+            listViewItem100});
             this.dataListView.Location = new System.Drawing.Point(36, 63);
             this.dataListView.Name = "dataListView";
             this.dataListView.Size = new System.Drawing.Size(523, 158);
@@ -1614,15 +1644,56 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(563, 583);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 18;
+            this.button10.Text = "自动";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(451, 583);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 17;
+            this.button9.Text = "急停";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(331, 583);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 16;
+            this.button8.Text = "开始";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(224, 583);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 15;
+            this.button7.Text = "复位";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // MatrixSystemDeviceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 599);
+            this.ClientSize = new System.Drawing.Size(708, 648);
             this.Controls.Add(this.panel1);
             this.Name = "MatrixSystemDeviceForm";
             this.Text = "阵列式高通量培养仪";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -1814,5 +1885,11 @@
         private System.Windows.Forms.ColumnHeader columnHeader40;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.TextBox currentCmdTextBox;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
     }
 }

@@ -27,6 +27,10 @@ namespace VirtialDevices
         {
             FatherForm.Enabled = true;
         }
+        public void MatrixSystemDevice_cmdEvent()
+        {
+            currentCmdTextBox.Text = DeviceInfo.Glb_Cmd;
+        }
 
         private void startButton_Click(object sender, EventArgs e)
         {
@@ -130,6 +134,29 @@ namespace VirtialDevices
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+        private void send_cmd(String cmd)
+        {
+            DeviceInfo.SendModBusMsg(ModbusMessage.MessageType.CMD, "Cmd", cmd);
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            send_cmd("Reset");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            send_cmd("Start");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            send_cmd("Stop");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            send_cmd("Auto");
         }
 
     }

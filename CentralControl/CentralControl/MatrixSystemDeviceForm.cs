@@ -21,6 +21,10 @@ namespace CentralControl
         {
             InitializeComponent();
         }
+        public void MatrixSystemDevice_cmdEvent()
+        {
+            currentCmdTextBox.Text = DeviceInfo.Glb_Cmd;
+        }
 
         private void sendButton_Click(object sender, EventArgs e)
         {
@@ -170,6 +174,32 @@ namespace CentralControl
             }
             listView2.EndUpdate();
 
+        }
+
+        private void send_cmd(String cmd)
+        {
+          
+                DeviceInfo.SendModBusMsg(ModbusMessage.MessageType.CMD, "Cmd", cmd);
+            
+        }
+
+        private void sendCmdButton_Click(object sender, EventArgs e)
+        {
+            string s = mingLingComboBox.Text;
+            switch (s) { 
+                case "复位":
+                    send_cmd("Reset");
+                    break;
+                case "开始":
+                    send_cmd("Start");
+                    break;
+                case  "急停":
+                    send_cmd("Stop");
+                    break;
+                case "自动" :
+                    send_cmd("Auto");
+                    break;
+            }
         }
     }
 }

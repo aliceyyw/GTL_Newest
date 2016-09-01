@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Instrument;
+using DeviceUtils;
 
 namespace VirtialDevices
 {
@@ -29,7 +30,10 @@ namespace VirtialDevices
             refresh();
             timer1.Start();
         }
-
+        public void MicroReactorDevice_cmdEvent()
+        {
+            currentCmdTextBox.Text = mrDevice.Glb_Cmd;
+        }
 
 
         private void comboBox1_textChanged(object sender, EventArgs e)
@@ -242,6 +246,29 @@ namespace VirtialDevices
         {
             this.Close();
             FatherForm.Enabled = true;
+        }
+        private void send_cmd(String cmd)
+        {
+            mrDevice.SendModBusMsg(ModbusMessage.MessageType.CMD, "Cmd", cmd);
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            send_cmd("Reset");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            send_cmd("Start");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            send_cmd("Stop");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            send_cmd("Auto");
         }
 
     }

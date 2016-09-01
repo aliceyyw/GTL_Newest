@@ -230,6 +230,8 @@
             this.label52 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.currentCmdTextBox = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -273,10 +275,10 @@
             // 
             this.tabPage1.Controls.Add(this.panel11);
             this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(670, 632);
+            this.tabPage1.Size = new System.Drawing.Size(670, 631);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "设定";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -284,6 +286,8 @@
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.currentCmdTextBox);
+            this.panel11.Controls.Add(this.label56);
             this.panel11.Controls.Add(this.sendCmdButton);
             this.panel11.Controls.Add(this.textBox1);
             this.panel11.Controls.Add(this.canShuComboBox);
@@ -303,6 +307,7 @@
             this.sendCmdButton.TabIndex = 5;
             this.sendCmdButton.Text = "发送";
             this.sendCmdButton.UseVisualStyleBackColor = true;
+            this.sendCmdButton.Click += new System.EventHandler(this.sendCmdButton_Click);
             // 
             // textBox1
             // 
@@ -330,7 +335,13 @@
             // 
             // mingLingComboBox
             // 
+            this.mingLingComboBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.mingLingComboBox.FormattingEnabled = true;
+            this.mingLingComboBox.Items.AddRange(new object[] {
+            "复位",
+            "开始",
+            "急停",
+            "自动"});
             this.mingLingComboBox.Location = new System.Drawing.Point(95, 7);
             this.mingLingComboBox.Name = "mingLingComboBox";
             this.mingLingComboBox.Size = new System.Drawing.Size(121, 20);
@@ -906,10 +917,10 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.panel4);
-            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(670, 632);
+            this.tabPage2.Size = new System.Drawing.Size(670, 631);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "显示";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1412,9 +1423,9 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.panel10);
-            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(670, 632);
+            this.tabPage3.Size = new System.Drawing.Size(670, 631);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "OD显示";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1713,6 +1724,24 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // currentCmdTextBox
+            // 
+            this.currentCmdTextBox.Enabled = false;
+            this.currentCmdTextBox.Location = new System.Drawing.Point(451, 60);
+            this.currentCmdTextBox.Name = "currentCmdTextBox";
+            this.currentCmdTextBox.ReadOnly = true;
+            this.currentCmdTextBox.Size = new System.Drawing.Size(70, 21);
+            this.currentCmdTextBox.TabIndex = 33;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(388, 63);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(47, 12);
+            this.label56.TabIndex = 32;
+            this.label56.Text = "command";
+            // 
             // MatrixSystemDeviceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1921,5 +1950,7 @@
         private System.Windows.Forms.Button sendCmdButton;
         private System.Windows.Forms.ComboBox selectSetTypeComboBox;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox currentCmdTextBox;
+        private System.Windows.Forms.Label label56;
     }
 }

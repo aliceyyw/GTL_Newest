@@ -6,6 +6,5 @@ D:\高通量仪器\GTL_stable\GTL\CentralControl\GTLutils\obj\Debug\GTLutils.pdb
 F:\SJTU\wyy\GTL_Newest\CentralControl\GTLutils\bin\Debug\GTLutils.dll
 F:\SJTU\wyy\GTL_Newest\CentralControl\GTLutils\bin\Debug\GTLutils.pdb
 F:\SJTU\wyy\GTL_Newest\CentralControl\GTLutils\bin\Debug\TwinCAT.Ads.dll
-F:\SJTU\wyy\GTL_Newest\CentralControl\GTLutils\obj\Debug\GTLutils.csprojResolveAssemblyReference.cache
 F:\SJTU\wyy\GTL_Newest\CentralControl\GTLutils\obj\Debug\GTLutils.dll
 F:\SJTU\wyy\GTL_Newest\CentralControl\GTLutils\obj\Debug\GTLutils.pdb

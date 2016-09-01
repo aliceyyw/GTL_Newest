@@ -414,6 +414,7 @@ namespace CentralControl
                         MultiTunnelDeviceForm mForm = new MultiTunnelDeviceForm();
                         mForm.FatherForm = this;
                         mForm.DeviceInfo = (MultiTunnelVirtualDevice)device;
+                        mForm.DeviceInfo.cmdEvent += new BaseVirtualDevice.cmdDelegate(mForm.MultiTunnelDevice_cmdEvent);
                         mForm.Show();
                         break;
                     case DeviceType.Clone:
@@ -436,12 +437,14 @@ namespace CentralControl
                         maForm.FatherForm = this;
                         maForm.IsSocket = true;
                         maForm.DeviceInfo = (MatrixSystemVirtualDevice)device;
+                        maForm.DeviceInfo.cmdEvent += new BaseVirtualDevice.cmdDelegate(maForm.MatrixSystemDevice_cmdEvent);
                         maForm.Show();
                         break;
                     case DeviceType.Storage:
                         MicroReactorForm mmForm = new MicroReactorForm();
                         mmForm.FatherForm = this;
                         mmForm.mrDevice = (MicroStorageVirtualDevice)device;
+                        mmForm.mrDevice.cmdEvent += new BaseVirtualDevice.cmdDelegate(mmForm.MicroReactorDevice_cmdEvent);
                         mmForm.Show();
                         break;
                     default:

@@ -1,0 +1,6 @@
+两边各自修改基类dll
+——GTLutils.dll (中控) DeviceUtils.dll（仪器）
+——BaseVitrualDevice中加入全局的cmd字段，实现decodeCmdMessage方法，并删除仪器类中重写的decodeCmdMessage方法。
+
+仪器类若重写ReceiveMsg方法，可能引起接收障碍
+

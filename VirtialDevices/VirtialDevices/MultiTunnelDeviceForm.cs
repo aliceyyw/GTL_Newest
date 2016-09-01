@@ -24,6 +24,11 @@ namespace VirtialDevices
         {
             InitializeComponent();
         }
+        public void MultiTunnelDevice_cmdEvent()
+        {
+            currentCmdTextBox.Text = DeviceInfo.Glb_Cmd;
+        }
+
 
         private void daoRuButton_Click(object sender, EventArgs e)
         {
@@ -146,6 +151,29 @@ namespace VirtialDevices
             DuoTongDaoShuJuShengChengForm form = new DuoTongDaoShuJuShengChengForm();
             form.FatherForm = this;
             form.Show();
+        }
+        private void send_cmd(String cmd)
+        {
+            DeviceInfo.SendModBusMsg(ModbusMessage.MessageType.CMD, "Cmd", cmd);
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            send_cmd("Reset");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            send_cmd("Start");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            send_cmd("Stop");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            send_cmd("Auto");
         }
 
 
