@@ -151,33 +151,7 @@ namespace Instrument
             }
         }
 
-        //public override void decodeCmdMessage(ModbusMessage msg)
-        //{
-        //    String cmd = (String)msg.Data["Cmd"];
-
-        //    if ("Start".Equals(cmd))
-        //    {
-        //        //dispenTimer.Start();
-        //        this.MDF_Cmd = "Start";
-        //    }
-        //    if ("Reset".Equals(cmd))
-        //    {
-        //        MDF_WhichDish = 1;
-        //        MDF_WhichStack = 1;
-        //        this.MDF_Cmd = "Reset";
-        //    }
-        //    if ("Stop".Equals(cmd))
-        //    {
-        //        //dispenTimer.Stop();
-        //        this.MDF_Cmd = "Stop";
-        //    }
-        //    if ("Auto".Equals(cmd))
-        //    {
-        //        this.MDF_Cmd = "Auto";
-        //    }
-
-        //    this.sendOKResponse();
-        //}
+       
 
         public override void decodeSetMessage(ModbusMessage msg)
         {

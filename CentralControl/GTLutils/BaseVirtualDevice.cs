@@ -167,6 +167,15 @@ namespace GTLutils
             } 
         }
         /*
+        *decodeDataMessage方法，处理数据库相关命令的函数
+        *有一个k-v对存储表名，
+        */
+        public virtual void decodeDataMessage(ModbusMessage s)
+        {
+
+        }
+
+        /*
         * decodeCmdMessage函数，处理CMD命令的函数
         * 虚函数实现，可根据需要在仪器类中实现相关处理方法
         */
